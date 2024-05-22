@@ -6,13 +6,11 @@ to try a daily build.
 
 
 For Debian, Ubuntu, and related systems, the following packages are required:
-python
-python-gtk2
-python-libxml2
-python-libxslt1
-python-serial
-python-suds (optional)
-python-support
+python3
+python3-requests
+python3-serial
+python3-wxgtk4.0
+python3-yattag
 
 For Redhat, Fedora, CentOS and related systems, the following packages
 are required: (This list is incomplete.  Please submit corrections.)
@@ -30,10 +28,10 @@ libxslt-python
 python-suds-jurko
 
 Once these packages are installed, you can run Chirp directly from the
-distribution directory by typing "./chirpw".  If you want to install it
+distribution directory by typing "./chirpwx.py".  If you want to install it
 properly, type this:
 
-  sudo python setup.py install --record files.txt
+  sudo python3 setup.py install --record files.txt
 
 This will install the package and create a list of files that were
 added to your system.  If you want to deinstall Chirp, type this:
